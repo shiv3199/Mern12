@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practice</title>
+    <style>
+        .container{
+            display: grid;
+            width: 600px;
+            height: 600px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .item-1{
+            grid-column: 1/2;
+            grid-row: 1/3;
+            background-color: aqua;
+        }
+        .item-2{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            background-color: violet;
+        }
+        .item-3{
+            grid-column: 3/5;
+            grid-row: 1/2;
+            background-color: purple;
+        }
+        .item-4{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            background-color: green;
+        }
+        .item-5{
+            grid-column: 3/4;
+            grid-row: 2/3;
+            background-color: orange;
+        }
+        .item-6{
+            grid-column: 4/5;
+            grid-row: 2/4;
+            background-color: magenta;
+        }
+        .item-7{
+            grid-column: 1/2;
+            grid-row: 2/4;
+            background-color: red;
+        }
+        .item-8{
+            grid-column: 2/3;
+            grid-row: 3/4;
+            background-color: purple;
+        }
+        .item-9{
+            grid-column: 3/4;
+            grid-row: 3/4;
+            background-color: seagreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+        <div class="item item-5">item-5</div>
+        <div class="item item-6">item-6</div>
+        <div class="item item-7">item-7</div>
+        <div class="item item-8">item-8</div>
+        <div class="item item-9">item-9</div>
+    </div>
+
+</body>
+</html>
