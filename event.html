@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Deligation</title>
+</head>
+<body>
+    <div class="grandparent">
+        Grand parent
+        <div class="parent">
+            Parent
+            <div class="child">child</div>
+        </div>
+    </div>
+    <script>
+        const grandparent = document.querySelector('.grandparent');
+        const parent = document.querySelector('.parent')
+        const child = document.querySelector('.child')
+        // grandparent.addEventListener('click',()=>{
+        //     console.log('GrandParent clicked')
+        // })
+        // parent.addEventListener('click',()=>{
+        //     console.log('Parent clicked')
+        // })
+        // child.addEventListener('click',()=>{
+        //     console.log('child clicked')
+        // }) //this is bubbling concept when its goes out its show
+        grandparent.addEventListener('click',(e)=>{
+            console.log('Clicked')
+            console.log(e) //this is event deligation 
+        })
+
+    </script>
+</body>
+</html>
